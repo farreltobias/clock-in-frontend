@@ -36,7 +36,7 @@ export const Header: React.FC<Props> = ({ name, code }) => {
   const [firstName] = fullName
 
   return (
-    <header className="flex justify-between">
+    <header className="flex justify-between container">
       <div className="flex flex-col justify-between">
         <div className="flex gap-3">
           <Avatar>

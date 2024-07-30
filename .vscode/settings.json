@@ -2,5 +2,8 @@
   "conventionalCommits.scopes": [
     "shadcn",
     "components"
+  ],
+  "cSpell.words": [
+    "tanstack"
   ]
 }

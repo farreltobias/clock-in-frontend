@@ -16,11 +16,12 @@ export const metadata: Metadata = {
   description: 'A simple punch clock app',
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+type Props = Readonly<{
   children: React.ReactNode
-}>) {
+  times: React.ReactNode
+}>
+
+export default function RootLayout({ children, times }: Props) {
   return (
     <html lang="en">
       <body
@@ -35,7 +36,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <main className="space-y-12 py-12">
+            {children}
+            {times}
+          </main>
         </ThemeProvider>
       </body>
     </html>
